@@ -20,6 +20,9 @@ jobs:
       - name: Download previous count from Gist
         run: |
           curl -f https://gist.githubusercontent.com/${{ github.actor }}/${{ secrets.GIST_ID }}/raw/clone.json > clone_before.json || cp clone.json clone_before.json
+          if ! grep -q '"clones"' clone_before.json; then
+            cp clone.json clone_before.json
+          fi
 
       - name: Compute accumulated count
         run: |
