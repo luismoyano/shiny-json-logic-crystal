@@ -1,9 +1,9 @@
 # shiny_json_logic ✨
 
-[![Shards](https://img.shields.io/badge/shards-shiny__json__logic-purple)](https://shards.info/github/luismoyano/shiny_json_logic_crystal)
+[![Shards](https://img.shields.io/badge/shards-shiny__json__logic-purple)](https://shards.info/github/luismoyano/shiny-json-logic-crystal)
 [![Crystal](https://img.shields.io/badge/crystal-%3E%3D%201.0-black)](https://crystal-lang.org)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/luismoyano/GIST_ID/raw/clone.json&logo=github)](https://github.com/luismoyano/shiny_json_logic_crystal)
+[![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/luismoyano/GIST_ID/raw/clone.json&logo=github)](https://github.com/luismoyano/shiny-json-logic-crystal)
 
 > **The most compliant Crystal implementation of JSON Logic. ✨**
 
@@ -15,7 +15,7 @@ This is the Crystal port of [shiny_json_logic](https://rubygems.org/gems/shiny_j
 
 ## Why shiny_json_logic?
 
-- ✅ **100% spec-compliant** — passes all 613 official JSON Logic tests.
+- ✅ **100% spec-compliant** — passes all 601 official JSON Logic tests.
 - 🧩 **Zero runtime dependencies** — stdlib only. Just add the shard.
 - ⚡ **Native Crystal performance** — compiled, type-safe, fast.
 - 🔁 **Drop-in aliases**: `JsonLogic` and `JSONLogic` available out of the box.
@@ -30,7 +30,7 @@ Add to your `shard.yml`:
 ```yaml
 dependencies:
   shiny_json_logic:
-    github: luismoyano/shiny_json_logic_crystal
+    github: luismoyano/shiny-json-logic-crystal
 ```
 
 Then run:
@@ -134,11 +134,11 @@ Or rescue `ShinyJsonLogic::Errors::Base` to handle all library errors in one swe
 
 ## Compatibility
 
-Tested against the [official JSON Logic test suite](https://github.com/json-logic/.github/tree/main/tests) (613 tests).
+Tested against the [official JSON Logic test suite](https://github.com/json-logic/.github/tree/main/tests) (601 tests).
 
 | Passed | Total |
 |--------|-------|
-| **613** | **613** |
+| **601** | **601** |
 
 ---
 
@@ -172,14 +172,14 @@ Please include tests with any change.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
-Repository: https://github.com/luismoyano/shiny_json_logic_crystal
+Repository: https://github.com/luismoyano/shiny-json-logic-crystal
 
 ---
 
 ## Related projects
 
-- [shiny_json_logic (Ruby)](https://rubygems.org/gems/shiny_json_logic) — 613/613 official tests, the most compliant Ruby implementation
-- [shiny/json-logic-php](https://packagist.org/packages/shiny/json-logic-php) — 613/613 official tests, the most compliant PHP implementation
+- [shiny_json_logic (Ruby)](https://rubygems.org/gems/shiny_json_logic) — 601/601 official tests, the most compliant Ruby implementation
+- [shiny/json-logic-php](https://packagist.org/packages/shiny/json-logic-php) — 601/601 official tests, the most compliant PHP implementation
 - [shinyjsonlogic.com](https://shinyjsonlogic.com) — JSON Logic playground, docs, and specification reference
 
 ---
