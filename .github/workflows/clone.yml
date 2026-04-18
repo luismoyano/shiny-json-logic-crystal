@@ -26,8 +26,32 @@ jobs:
 
       - name: Compute accumulated count
         run: |
-          curl https://raw.githubusercontent.com/MShawon/github-clone-count-badge/master/main.py > main.py
-          python3 main.py
+          python3 - <<'EOF'
+          import json
+
+          with open('clone.json') as f:
+              now = json.load(f)
+
+          try:
+              with open('clone_before.json') as f:
+                  before = json.load(f)
+              if 'clones' not in before:
+                  before = now
+          except Exception:
+              before = now
+
+          # Merge by timestamp
+          index = {c['timestamp']: c for c in before.get('clones', [])}
+          for c in now.get('clones', []):
+              index[c['timestamp']] = c
+
+          merged = list(index.values())
+          total = sum(c['count'] for c in merged)
+
+          result = {"clones": merged, "count": total}
+          with open('clone.json', 'w') as f:
+              json.dump(result, f, indent=2)
+          EOF
 
       - name: Update Gist with latest count
         run: |
