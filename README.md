@@ -3,7 +3,7 @@
 [![Shards](https://img.shields.io/badge/shards-shiny__json__logic-purple)](https://shards.info/github/luismoyano/shiny-json-logic-crystal)
 [![Crystal](https://img.shields.io/badge/crystal-%3E%3D%201.0-black)](https://crystal-lang.org)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/luismoyano/GIST_ID/raw/clone.json&logo=github)](https://github.com/luismoyano/shiny-json-logic-crystal)
+[![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/luismoyano/ed7e2c21f7fe6f842898d029b59584e0/raw/clone.json&logo=github)](https://github.com/luismoyano/shiny-json-logic-crystal)
 
 **shiny_json_logic** is a **pure Crystal**, **zero-dependency** JSON Logic implementation passing all the specification tests.
 
