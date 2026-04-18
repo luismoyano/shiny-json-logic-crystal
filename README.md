@@ -5,19 +5,17 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/luismoyano/GIST_ID/raw/clone.json&logo=github)](https://github.com/luismoyano/shiny-json-logic-crystal)
 
-> **The most compliant Crystal implementation of JSON Logic. ✨**
+**shiny_json_logic** is a **pure Crystal**, **zero-dependency** JSON Logic implementation passing all the specification tests.
 
-**shiny_json_logic** is a **pure Crystal**, **zero-dependency** JSON Logic implementation — the only Crystal shard that passes 100% of the official JSON Logic tests.
-
-This is the Crystal port of [shiny_json_logic](https://rubygems.org/gems/shiny_json_logic), the most compliant Ruby implementation of JSON Logic.
+This is the Crystal port of [shiny_json_logic](https://rubygems.org/gems/shiny_json_logic).
 
 ---
 
 ## Why shiny_json_logic?
 
-- ✅ **100% spec-compliant** — passes all 601 official JSON Logic tests.
-- 🧩 **Zero runtime dependencies** — stdlib only. Just add the shard.
-- ⚡ **Native Crystal performance** — compiled, type-safe, fast.
+- ✅ **100% spec-compliant** passes all 601 official JSON Logic tests.
+- 🧩 **Zero runtime dependencies** stdlib only. Just add the shard.
+- ⚡ **Native Crystal performance** compiled, type-safe, fast.
 - 🔁 **Drop-in aliases**: `JsonLogic` and `JSONLogic` available out of the box.
 - 🔧 **Actively maintained** and aligned with the evolving JSON Logic specification.
 
@@ -92,17 +90,16 @@ JsonLogic.apply(JSON.parse(%({">" : [{"var": "score"}, 90]})), JSON.parse(%({"sc
 
 | Category | Operators |
 |----------|-----------|
-| Data access | `var`, `missing`, `missing_some`, `exists`, `val` ✨ |
+| Data access | `var`, `missing`, `missing_some`, `exists`, `val` |
 | Logic | `if`, `?:`, `and`, `or`, `!`, `!!` |
 | Comparison | `==`, `===`, `!=`, `!==`, `>`, `>=`, `<`, `<=` |
 | Arithmetic | `+`, `-`, `*`, `/`, `%`, `max`, `min` |
 | String | `cat`, `substr` |
 | Array | `map`, `filter`, `reduce`, `all`, `none`, `some`, `merge`, `in` |
-| Coalesce | `??` ✨ |
-| Error handling | `throw`, `try` ✨ |
-| Utility | `preserve` ✨ |
+| Coalesce | `??` |
+| Error handling | `throw`, `try` |
+| Utility | `preserve` |
 
-✨ = community-extended operators beyond the core spec.
 
 ---
 
@@ -178,7 +175,7 @@ Repository: https://github.com/luismoyano/shiny-json-logic-crystal
 
 ## Related projects
 
-- [shiny_json_logic (Ruby)](https://rubygems.org/gems/shiny_json_logic) — 601/601 official tests, the most compliant Ruby implementation
+- [shiny_json_logic (Ruby)](https://rubygems.org/gems/shiny_json_logic): 601/601 official tests, the fastest & most compliant Ruby implementation
 - [shiny/json-logic-php](https://packagist.org/packages/shiny/json-logic-php) — 601/601 official tests, the most compliant PHP implementation
 - [shinyjsonlogic.com](https://shinyjsonlogic.com) — JSON Logic playground, docs, and specification reference
 
