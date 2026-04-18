@@ -1,0 +1,13 @@
+name: shiny_json_logic
+version: 0.1.0
+
+description: JSON Logic implementation for Crystal — 100% spec compliant, zero dependencies
+
+authors:
+  - Luis Moyano
+
+targets:
+  shiny_json_logic:
+    main: src/shiny_json_logic.cr
+
+license: MIT
